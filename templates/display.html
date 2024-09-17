@@ -1,0 +1,20 @@
+
+{%extends 'base.html'%}
+{%block title%}crop Detection system{% endblock title%}
+{%block body%}
+<div>
+
+
+  {%if size == 2%}
+  <img src="static/shots/{{variable_name}}.png"  width="720" height="480"/>
+
+  {%else%}
+  <img src="static/shots/{{variable_name}}"  width="720" height="480"/>
+
+  {%endif%}
+
+</div>
+<div>
+  THE LABEL: {{label}}
+</div>
+{%endblock body%}
